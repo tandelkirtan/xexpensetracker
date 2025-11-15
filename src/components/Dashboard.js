@@ -14,6 +14,9 @@ export const Dashboard = () => {
               <Expense/>
               <PieChartWithCustomizedLabel/>
         </div>
+        <div>
+          
+        </div>
     </div>
   )
 }

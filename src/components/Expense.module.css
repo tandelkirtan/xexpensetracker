@@ -40,3 +40,13 @@ select, input {
   font-size: 15px;
   padding: 10px 3px;
 }
+
+
+.cancle
+{
+    border-radius: 5px;
+  border: 1px solid grey;
+  margin: 5px;
+  font-size: 15px;
+  padding: 10px 3px;
+}
