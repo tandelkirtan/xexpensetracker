@@ -1,0 +1,9 @@
+.tran_div > h1
+{
+    color: white;
+}
+.tran_div
+{
+    border: 2px solid blue;
+    width: 95%;
+}

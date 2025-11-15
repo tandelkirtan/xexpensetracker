@@ -1,0 +1,43 @@
+.tran_div
+    {
+        /* border: 2px solid yellow; */
+        width: 95%;
+        margin-top: 20px;
+    }
+
+      .list_bar
+  {
+    /* border: 2px solid rgb(0, 255, 0); */
+    width: 100%;
+    /* background-color: rgb(98, 98, 98); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+
+    /* ------------Dashboard Styling Starts here------------------- */
+
+      .dash_div > h1
+  {
+    color: white;
+    margin: 20px 0px;
+  }
+  .dash_div
+  {
+      /* border: 2px solid red; */
+      width: 95%;
+  }
+
+  .wal_exp_chart_div
+  {
+    /* border: 2px solid green; */
+    width: 100%;
+    border-radius: 20px;
+    background-color: rgb(98, 98, 98);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }

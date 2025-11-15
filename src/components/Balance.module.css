@@ -1,0 +1,43 @@
+.balance_div {
+  /* border: 2px solid orange; */
+  min-width: 400px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  margin: 10px;
+  min-height: 200px;
+  background-color: rgb(176, 176, 176);
+  border-radius: 15px;
+}
+
+input {
+  border: 1px solid grey;
+  font-size: 15px;
+  padding: 10px;
+  width: 130px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.addbalance {
+  border-radius: 5px;
+  border: 1px solid grey;
+  margin: 5px;
+  font-size: 15px;
+  padding: 10px 3px;
+  background-color: orange;
+}
+
+.cancel {
+  border-radius: 5px;
+  border: 1px solid grey;
+  margin: 5px;
+  font-size: 15px;
+  padding: 10px 3px;
+}
+
+button:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,19 @@
+  .dash_div > h1
+  {
+    color: white;
+  }
+  .dash_div
+  {
+      /* border: 2px solid red; */
+      width: 95%;
+  }
+
+  .wal_exp_chart_div
+  {
+    border: 2px solid green;
+    width: 95%;
+    background-color: rgb(98, 98, 98);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }

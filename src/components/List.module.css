@@ -1,0 +1,21 @@
+.list_div > h1{
+    color: white;
+    margin: 0px 0px 10px 0px;
+}
+.list_div{
+    /* border: 2px solid blue; */
+    width: 900px;
+    margin: 0px 20px;
+}
+
+.bar_div{
+    border: 2px solid rgb(255, 0, 212);
+    width: 400px;
+    margin: 0px 20px;
+}
+
+.maped_list
+{
+    background-color:rgb(255, 255, 255);
+    border-radius: 20px;
+}
