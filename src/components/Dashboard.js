@@ -3,7 +3,7 @@ import styles from "./Transaction.module.css"
 
 import "./Das.css"
 import { Expense } from "./Expense"
-import PieChartWithCustomizedLabel, { PieChart } from "./PieChart"
+import PieChartWithCustomizedLabel from "./PieChart"
 
 export const Dashboard = () => {
   return (

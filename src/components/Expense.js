@@ -43,9 +43,9 @@ export const Expense = () => {
   };
 
   useEffect(() => {
-    const localList = JSON.parse(localStorage.getItem("list"));
+    const localList = JSON.parse(localStorage.getItem("expenses"));
     if (!localList) {
-      localStorage.setItem("list", JSON.stringify([]));
+      localStorage.setItem("expenses", JSON.stringify([]));
       setList([]);
     } else {
       setList(localList);
@@ -55,7 +55,7 @@ export const Expense = () => {
 
   useEffect(() => {
     if (isMounted && list.length >= 0) {
-      localStorage.setItem("list", JSON.stringify(list));
+      localStorage.setItem("expenses", JSON.stringify(list));
     }
   }, [list, isMounted]);
 
@@ -74,7 +74,7 @@ export const Expense = () => {
     console.log(formData);
     let newBal = balance - Number(price);
     setBalance(newBal)
-    localStorage.setItem("balance", newBal);
+    localStorage.setItem("  ", newBal);
     setList((prevList) => [...prevList, formData]);
     handleClose();
   };
@@ -90,6 +90,7 @@ export const Expense = () => {
             backgroundColor: "red",
           }}
           onClick={handleOpen}
+          type="button"
         >
           + Add Expense
         </Button>
@@ -108,15 +109,18 @@ export const Expense = () => {
                 required
                 placeholder="Title"
                 type="text"
+                name="title"
                 onChange={(e) => setTitle(e.target.value)}
               ></input>
               <input
                 required
+                name="price"
                 placeholder="Price"
                 type="number"
                 onChange={(e) => setPrice(e.target.value)}
               ></input>
               <select
+              name="category"
                 required
                 className={styles.select}
                 onChange={(e) => setCategory(e.target.value)}
@@ -130,6 +134,7 @@ export const Expense = () => {
               </select>
               <input
                 required
+                name="date"
                 type="date"
                 onChange={(e) => setDate(e.target.value)}
               ></input>

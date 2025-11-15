@@ -51,7 +51,7 @@ export const Balance = () => {
   
   return (
     <div className={styles.balance_div}>
-      <h1>Balance:- ₹{balance}</h1>
+      <h1>Wallet Balance: ₹{balance}</h1>
       <div>
         <Button
         style={{
@@ -59,7 +59,8 @@ export const Balance = () => {
               fontWeight: "bold",
               backgroundColor: "green",
             }}
-        onClick={handleOpen}>+ Add Balance</Button>
+            type="button"
+        onClick={handleOpen}>+ Add Income</Button>
         <Modal
           open={open}
           onClose={handleClose}
@@ -71,7 +72,7 @@ export const Balance = () => {
               Add Balance
             </Typography>
             <form onSubmit={handleSublit}>
-              <input placeholder="Add Balance" required type="number" onChange={(e) => setAddedAmount(e.target.value)}></input>
+              <input placeholder="Add Balance" required type = "number" onChange={(e) => setAddedAmount(e.target.value)}></input>
               <button type="submit" className={styles.addbalance}>Add Balance</button>
               <button type="button" className={styles.cancel} onClick={handleClose}>Cancel</button>
             </form>
