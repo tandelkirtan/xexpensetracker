@@ -11,14 +11,14 @@ const TinyBarChart = () => {
   list.reduce((map, item) => {
     return map.set(item.category, (map.get(item.category) || 0) + 1);
   }, new Map()),
-  ([name, uv]) => ({ name, uv })
+  ([name, count]) => ({ name, count })
 );
 
   return (
     <BarChart width={300} height={100} data={categoryCounts}>
       <XAxis dataKey="name" />
       <Tooltip />
-      <Bar dataKey="uv" fill="#8884d8" />
+      <Bar dataKey="count" fill="#8884d8" />
     </BarChart>
   );
 };

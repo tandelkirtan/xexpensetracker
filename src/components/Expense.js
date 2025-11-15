@@ -81,7 +81,7 @@ export const Expense = () => {
 
   return (
     <div className={styles.expense_div}>
-      <h1>Expenses:- ₹{totalExpense}</h1>
+      <h2>Expenses:- ₹{totalExpense}</h2>
       <div>
         <Button
           style={{

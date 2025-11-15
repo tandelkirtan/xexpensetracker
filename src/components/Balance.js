@@ -51,7 +51,7 @@ export const Balance = () => {
   
   return (
     <div className={styles.balance_div}>
-      <h1>Wallet Balance: ₹{balance}</h1>
+      <h2>Wallet Balance: ₹{balance}</h2>
       <div>
         <Button
         style={{
