@@ -15,8 +15,9 @@ const TinyBarChart = () => {
 );
 
   return (
-    <BarChart width={300} height={100} data={categoryCounts}>
-      <XAxis dataKey="name" />
+    <BarChart width={300} height={300} data={categoryCounts} layout="vertical">
+      <XAxis type="number" />
+      <YAxis dataKey="name" type="category" />
       <Tooltip />
       <Bar dataKey="count" fill="#8884d8" />
     </BarChart>

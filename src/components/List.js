@@ -12,7 +12,7 @@ export const List = () => {
 
   return (
     <div className={styles.list_div}>
-      <h1>Recent Transactions</h1>
+      <h2>Recent Transactions</h2>
       <div className={styles.maped_list}>
         {list.map((item) => (
           <ListCard
