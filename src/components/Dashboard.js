@@ -8,7 +8,9 @@ import PieChartWithCustomizedLabel from "./PieChart"
 export const Dashboard = () => {
   return (
     <div className={styles.dash_div}>
-        <h1>Expense Tracker</h1>
+        <header>
+          <h1>Expense Tracker</h1>
+        </header>
         <div className={styles.wal_exp_chart_div}>
               <Balance/>
               <Expense/>
