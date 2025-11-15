@@ -72,8 +72,8 @@ export const Balance = () => {
               Add Balance
             </Typography>
             <form onSubmit={handleSublit}>
-              <input placeholder="Add Balance" required type = "number" onChange={(e) => setAddedAmount(e.target.value)}></input>
-              <button type="submit" className={styles.addbalance}>Add Balance</button>
+              <input placeholder="Income Amount" required type = "number" onChange={(e) => setAddedAmount(e.target.value)}></input>
+              <button type="submit" className={styles.addbalance}>Add Income</button>
               <button type="button" className={styles.cancel} onClick={handleClose}>Cancel</button>
             </form>
           </Box>

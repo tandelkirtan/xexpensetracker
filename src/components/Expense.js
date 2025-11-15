@@ -74,14 +74,14 @@ export const Expense = () => {
     console.log(formData);
     let newBal = balance - Number(price);
     setBalance(newBal)
-    localStorage.setItem("  ", newBal);
+    localStorage.setItem("balance", newBal);
     setList((prevList) => [...prevList, formData]);
     handleClose();
   };
 
   return (
     <div className={styles.expense_div}>
-      <h1>Expense:- ₹{totalExpense}</h1>
+      <h1>Expenses:- ₹{totalExpense}</h1>
       <div>
         <Button
           style={{
